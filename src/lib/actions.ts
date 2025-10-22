@@ -20,7 +20,11 @@ async function getBaseUrl(): Promise<string> {
         // The 'response.url' will be the final URL after all redirects
         const finalUrl = new URL(response.url);
         
-        // We only want the protocol and hostname, e.g., "https://movies4u.contact/"
+        // We only want the protocol and hostname, e.g., "https://hdhub4u.pictures
+        
+        
+        
+        /"
         const cleanBaseUrl = `${finalUrl.protocol}//${finalUrl.hostname}`;
         
         baseUrl = cleanBaseUrl;
@@ -72,7 +76,7 @@ async function parseMovies(html: string): Promise<Movie[]> {
         try {
             const url = new URL(path);
             const baseHostname = new URL(B_URL).hostname;
-            if (url.hostname.endsWith(baseHostname) || url.hostname.includes('movies4u')) {
+            if (url.hostname.endsWith(baseHostname) || url.hostname.includes('hdhub4u')) {
                 path = url.pathname;
             } else {
                 return; // Skip external links
@@ -110,7 +114,7 @@ async function parseMovies(html: string): Promise<Movie[]> {
             try {
                 const url = new URL(path);
                 const baseHostname = new URL(B_URL).hostname;
-                 if (url.hostname.endsWith(baseHostname) || url.hostname.includes('movies4u')) {
+                 if (url.hostname.endsWith(baseHostname) || url.hostname.includes('hdhub4u')) {
                     path = url.pathname;
                 } else {
                     return;
