@@ -21,19 +21,19 @@ export const metadata: Metadata = {
   title: 'hdlove4u',
   description: 'Your ad-free streaming companion',
   keywords: 'movies, download, hd, free, streaming, watch online',
-  authors: [{ name: 'HDlove4u Rider' }],
+  authors: [{ name: 'Kuldeep Rider' }],
   robots: 'index, follow',
   manifest: '/manifest.json',
   openGraph: {
-    title: 'hdlove4u',
+    title: 'Apna Bhandar',
     description: 'Your ad-free streaming companion',
     type: 'website',
     locale: 'en_US',
-    siteName: 'hdlove4u',
+    siteName: 'Apna Bhandar',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'hdlove4u',
+    title: 'Apna Bhandar',
     description: 'Your ad-free streaming companion',
   },
   other: {
@@ -70,7 +70,7 @@ export default function RootLayout({
           </div>
           <Toaster />
         </ThemeProvider>
-        <script src='https://dktczn.github.io/Dk/cdn/autoupdate.js'/>
+        
         <script
           dangerouslySetInnerHTML={{
             __html: `
